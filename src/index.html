@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Analizador de texto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Analizador de Texto</h1>
+    </div>
+ </header>
+
+  <section>
+    <div>
+      <ul class="contenedor-lista">
+        <li class="item" data-testid="word-count">Palabras</li>
+        <li class="item" data-testid="character-count">Caracteres</li>
+        <li class="item" data-testid="character-no-spaces-count">Caracteres sin espacios</li>
+        <li class="item" data-testid="number-count">Numeros</li>
+        <li class="item" data-testid="number-sum">Suma numeros</li>
+        <li class="item" data-testid="word-length-average">Longitud de la palabra</li>
+      </ul>
+      <p>Ingresa el texto</p>
+    </div>
+    <div>
+      <textarea name="user-input" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <button id="reset-button"> Limpiar Campo</button>
+    <br>
+    <br><br><br>
+  </section>
+
+  
+
+
+<footer>
+  <div>
+    <p>
+      Karla Aqueveque
+    </p>
+  </div>
+</footer>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>
