@@ -12,16 +12,18 @@ const liCinco = document.querySelector('[data-testid="number-count"]');
 const liSeis = document.querySelector('[data-testid="number-sum"]');
 
 cajaTexto.addEventListener("keyup", function () {
-  liUno.innerHTML = analyzer.getWordCount(cajaTexto.value);
-  liDos.innerHTML = analyzer.getCharacterCount(cajaTexto.value);
-  liTres.innerHTML = analyzer.getCharacterCountExcludingSpaces(cajaTexto.value);
-  liCuatro.innerHTML = analyzer.getAverageWordLength(cajaTexto.value);
-  liCinco.innerHTML = analyzer.getNumberCount(cajaTexto.value);
-  liSeis.innerHTML = analyzer.getNumberSum(cajaTexto.value);
+  liUno.innerHTML = 'Palabras: ' + analyzer.getWordCount(cajaTexto.value);
+  liDos.innerHTML = 'Caracteres: ' + analyzer.getCharacterCount(cajaTexto.value);
+  liTres.innerHTML = 'Caracteres sin Espacio:' + analyzer.getCharacterCountExcludingSpaces(cajaTexto.value);
+  liCuatro.innerHTML = 'Promedio longitud: ' + analyzer.getAverageWordLength(cajaTexto.value);
+  liCinco.innerHTML = 'Números: ' + analyzer.getNumberCount(cajaTexto.value);
+  liSeis.innerHTML = 'Suma Números: ' + analyzer.getNumberSum(cajaTexto.value);
 });
 
 const botonReset = document.getElementById("reset-button");
 botonReset.addEventListener("click", function () {
-  botonReset.style.color = "green";
+  botonReset.addEventListener("mouseover", () => {
+
+  });
   cajaTexto.value = "";
 });
