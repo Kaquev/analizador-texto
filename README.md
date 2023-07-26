@@ -1,8 +1,9 @@
 
 
+
 Contenido
 
-1. Funcionalidades
+1. Analizador de Texto Funcionalidades
 1. Caracteristicas
 1. Tecnología Web utilizada
 1. Tests	
